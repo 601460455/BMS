@@ -1,5 +1,0 @@
-<template>
-    <div>
-        这是部门管理
-    </div>
-</template>
