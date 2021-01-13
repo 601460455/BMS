@@ -4,11 +4,22 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 import power from './routers/power'
 import limit from '@/views/Power/Limit'
-const routes = [{
-        path: '/',
-        component: limit
+import ShouYe from './routers/shouye'
+import Login from '@/views/ShouYe/Login'
+import Manage from './routers/manage'
+
+const routes = [
+    {
+        path:'/login',
+        component:Login
     },
-    ...power
+    {   
+        path:'/',
+        redirect: '/homepage',
+    },
+    ...power,
+    ...ShouYe,
+    ...Manage,
 ]
 
 const router = new VueRouter({
