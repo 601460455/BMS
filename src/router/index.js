@@ -2,13 +2,13 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
-import power from './routers/power'
-import limit from '@/views/Power/Limit'
+import lessee from './routers/lessee'
+import lesseelist from '@/views/Lessee/LesseeList'
 const routes = [{
         path: '/',
-        component: limit
+        component: lesseelist
     },
-    ...power
+    ...lessee
 ]
 
 const router = new VueRouter({
