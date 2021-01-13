@@ -4,11 +4,13 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 import power from './routers/power'
 import limit from '@/views/Power/Limit'
+import Manage from './routers/manage'
 const routes = [{
         path: '/',
         component: limit
     },
-    ...power
+    ...power,
+    ...Manage
 ]
 
 const router = new VueRouter({
