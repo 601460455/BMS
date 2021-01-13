@@ -65,10 +65,10 @@
               <span>权限管理</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="5-1">权限管理</el-menu-item>
-              <el-menu-item index="5-2">部门管理</el-menu-item>
-              <el-menu-item index="5-3">管理员管理</el-menu-item>
-              <el-menu-item index="5-4">操作日志</el-menu-item>
+              <el-menu-item index="/branch">部门管理</el-menu-item>
+              <el-menu-item index="/admin">管理员管理</el-menu-item>
+              <el-menu-item index="/branch">操作日志</el-menu-item>
+              <el-menu-item index="/operation">角色管理</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
         </el-menu>
