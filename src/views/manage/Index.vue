@@ -1,9 +1,5 @@
 <template>
-<<<<<<< HEAD
   <div style="width:1100px">
-=======
-  <div>
->>>>>>> 9c776eae452240d05cf94920a1cb4c90d6cbc78e
     <h2 class="topic">市场管理</h2>
     <div class="div"></div>
     <el-table ref="filterTable" :data="tableData" style="width: 100%">

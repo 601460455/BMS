@@ -1,8 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
-
-
 import Manage from './routers/manage'
 Vue.use(VueRouter)
 import power from './routers/power'
