@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+
+
+import Manage from './routers/manage'
 Vue.use(VueRouter)
 import power from './routers/power'
-import limit from '@/views/Power/Limit'
 import ShouYe from './routers/shouye'
 import Login from '@/views/ShouYe/Login'
-import Manage from './routers/manage'
 
 const routes = [
     {
@@ -19,8 +20,9 @@ const routes = [
     },
     ...power,
     ...ShouYe,
-    ...Manage,
+    ...Manage 
 ]
+
 
 const router = new VueRouter({
     mode: 'history',
