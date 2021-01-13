@@ -1,0 +1,16 @@
+{
+  "id": "2324271",
+  "name": "w",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2228339",
+      "name": "管理",
+      "font_class": "guanli",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

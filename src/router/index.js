@@ -1,15 +1,30 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import Manage from './routers/manage'
 Vue.use(VueRouter)
+
 import lessee from './routers/lessee'
-import lesseelist from '@/views/Lessee/LesseeList'
-const routes = [{
-        path: '/',
-        component: lesseelist
+
+import power from './routers/power'
+import ShouYe from './routers/shouye'
+import Login from '@/views/ShouYe/Login'
+
+const routes = [
+    {
+        path:'/login',
+        component:Login
     },
-    ...lessee
+    {   
+        path:'/',
+        redirect: '/homepage',
+    },
+    ...power,
+    ...ShouYe,
+    ...Manage,
+    ...lessee 
 ]
+
 
 const router = new VueRouter({
     mode: 'history',
