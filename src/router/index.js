@@ -1,16 +1,31 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
+import Manage from './routers/manage'
 Vue.use(VueRouter)
 import Lease from './routers/Lease'
-import auction from '@/views/Lease/Auction'
 
-const routes = [{
-        path: '/',
-        component: auction
-    },
-    ...Lease
-]
+    import lessee from './routers/lessee'
+    
+    import power from './routers/power'
+    import ShouYe from './routers/shouye'
+    import Login from '@/views/ShouYe/Login'
+    
+    const routes = [
+        {
+            path:'/login',
+            component:Login
+        },
+        {   
+            path:'/',
+            redirect: '/homepage',
+        },
+        ...power,
+        ...ShouYe,
+        ...Manage,
+        ...lessee, 
+        ...Lease
+    ]
+
 
 const router = new VueRouter({
     mode: 'history',

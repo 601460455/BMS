@@ -1,7 +1,7 @@
 import Admin from '@/views/Power/Admin'
 import Branch from '@/views/Power/Branch'
-import Limit from '@/views/Power/Limit'
 import Operation from '@/views/Power/Operation'
+import Diction from '@/views/Power/Diction'
 
 var admin = [{
         path: '/admin',
@@ -12,12 +12,12 @@ var admin = [{
         component: Branch
     },
     {
-        path: '/limit',
-        component: Limit
-    },
-    {
         path: '/operation',
         component: Operation
+    },
+    {
+        path: '/diction',
+        component: Diction
     },
 ]
 
