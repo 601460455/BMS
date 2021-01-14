@@ -2,13 +2,14 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
-import power from './routers/power'
-import limit from '@/views/Power/Limit'
+import Lease from './routers/Lease'
+import auction from '@/views/Lease/Auction'
+
 const routes = [{
         path: '/',
-        component: limit
+        component: auction
     },
-    ...power
+    ...Lease
 ]
 
 const router = new VueRouter({
@@ -16,5 +17,4 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes
 })
-
 export default router
